@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      .gros {
-        font-size: 25px;
-        display: none;
-      }
-    </style>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <button class="gros">button1</button>
+    <button class="gros" style="color: bisque">button1</button>
     <button class="petit">button2</button>
     <button>button3</button>
     <button>button4</button>
     <button>button5</button>
     <button>button6</button>
+
+    <script>
+      JQuery(function () {
+        $(".gros").hide();
+      });
+    </script>
   </body>
 </html>
