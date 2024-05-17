@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <p class="myParas">Voici, un paragraphe</p>
+    <p class="text" style="display: none">And now it's gone</p>
+
+    <button id="myButton">Show/Hide</button>
+    <script>
+      $("#myButton").on("click", function () {
+        $(".myParas").toggle(), $(".text").toggle();
+      });
+    </script>
+  </body>
+</html>
