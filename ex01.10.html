@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <button id="toggleColorButton">Toggle Color</button>
+    <p id="text">Ce texte va alterner de couleur.</p>
+
+    <script>
+      $(document).ready(function () {
+        $("#toggleColorButton").click(function () {
+          if ($("#text").css("background-color") === "rgb(255, 0, 0)") {
+            $("#text").css("background-color", "green");
+          } else {
+            $("#text").css("background-color", "red");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
