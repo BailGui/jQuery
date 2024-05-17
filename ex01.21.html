@@ -11,12 +11,13 @@
     <div id="content"></div>
 
     <label for="submit"></label>
-    <input type="text" />
-    <button type="submit"></button>
+    <input id="userContent" type="text" />
+    <button type="submit">SEND</button>
 
     <script>
       $(document).ready(function () {
-
+        $("button").click(function () {
+          $("#content").html($("#userContent").val());
         });
       });
     </script>
