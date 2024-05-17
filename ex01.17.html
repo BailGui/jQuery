@@ -7,13 +7,17 @@
     <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <button id="btnSlideUp">Slide Up</button>
-    <div id="panel">Contenu à glisser</div>
+    <div id="content">Ceci est un contenu initial</div>
+    <button id="btnGetHtml">Obtenir HTML</button>
+    <button id="btnSetHtml">Obtenir HTML</button>
 
     <script>
       $(document).ready(function () {
-        $("#btnSlideUp").click(function () {
-          $("#panel").slideUp().show();
+        $("#btnGetHtml").click(function () {
+          alert($("#content").html());
+        });
+        $("#btnSetHtml").click(function () {
+          $("#content").html("<p>Nouveau contenu</p>");
         });
       });
     </script>

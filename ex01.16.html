@@ -7,13 +7,15 @@
     <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <button id="btnSlideUp">Slide Up</button>
-    <div id="panel">Contenu à glisser</div>
+    <div id="container">
+      <p>Ce paragraphe est à l'intérieur d'un div</p>
+    </div>
+    <button id="btnParent">Sélectionner parent</button>
 
     <script>
       $(document).ready(function () {
-        $("#btnSlideUp").click(function () {
-          $("#panel").slideUp().show();
+        $("#btnParent").click(function () {
+          $("p").parent().css("border", "2px solid black");
         });
       });
     </script>
