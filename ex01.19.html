@@ -7,14 +7,13 @@
     <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <button id="btnSlideDown">Masquer</button>
-    <div id="panel" style="display: none">Contenu à glisser</div>
+    <div id="content">Ceci est un contenu initial</div>
+    <button id="btnSetHtml">Obtenir HTML</button>
 
     <script>
       $(document).ready(function () {
-        $("#panel").slideDown(1500);
-        $("#btnSlideDown").click(function () {
-          $("#panel").hide();
+        $("#btnSetHtml").click(function () {
+          $("#content").html("<p>Nouveau contenu</p>");
         });
       });
     </script>

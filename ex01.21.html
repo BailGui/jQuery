@@ -7,14 +7,16 @@
     <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <button id="btnSlideDown">Masquer</button>
-    <div id="panel" style="display: none">Contenu à glisser</div>
+    <h1>Titre</h1>
+    <div id="content"></div>
+
+    <label for="submit"></label>
+    <input type="text" />
+    <button type="submit"></button>
 
     <script>
       $(document).ready(function () {
-        $("#panel").slideDown(1500);
-        $("#btnSlideDown").click(function () {
-          $("#panel").hide();
+
         });
       });
     </script>

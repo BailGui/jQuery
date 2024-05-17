@@ -7,14 +7,14 @@
     <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <button id="btnSlideDown">Masquer</button>
-    <div id="panel" style="display: none">Contenu à glisser</div>
+    <div>Paragraphe 1</div>
+    <div style="display: none">Paragraphe 2</div>
+    <button id="btnNext">Sélectionnez le paragraphe suivant</button>
 
     <script>
       $(document).ready(function () {
-        $("#panel").slideDown(1500);
-        $("#btnSlideDown").click(function () {
-          $("#panel").hide();
+        $("#btnNext").click(function () {
+          $("div:first").next().slideDown();
         });
       });
     </script>

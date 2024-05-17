@@ -7,13 +7,13 @@
     <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <button id="btnSlideUp">Slide Up</button>
+    <button id="btnSlideUp">SlideUp</button>
     <div id="panel">Contenu à glisser</div>
 
     <script>
       $(document).ready(function () {
         $("#btnSlideUp").click(function () {
-          $("#panel").slideUp().show();
+          $("#panel").slideUp(1500);
         });
       });
     </script>
