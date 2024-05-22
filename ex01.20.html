@@ -7,13 +7,13 @@
     <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <p id="content">Ceci est un contenu initial</p>
-    <button id="btnSetHtml">Obtenir HTML</button>
+    <button id="btnSlideUp">Toggle</button>
+    <div id="panel">Contenu à glisser</div>
 
     <script>
       $(document).ready(function () {
-        $("#btnSetHtml").click(function () {
-          $("#content").html("<p>Nouveau contenu</p>");
+        $("#btnSlideUp").click(function () {
+          $("#panel").slideToggle(1500);
         });
       });
     </script>
