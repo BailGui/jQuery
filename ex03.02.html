@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="content" style="display: none">Réponse visible</div>
+    <button id="btn">Click</button>
+    <p id="valid">blablabla</p>
+
+    <script>
+      $(document).ready(function () {
+        $("#valid").hide();
+        $("#btn").click(function () {
+          alert($("#content").html());
+          $("#valid").show();
+        });
+      });
+    </script>
+  </body>
+</html>
