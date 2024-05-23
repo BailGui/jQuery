@@ -8,19 +8,19 @@
   <body>
     <button id="btn">click</button>
 <ul>
-    <li class="supprimer">pioupioupiou</li>
-    <li class="supprimer">pioupioupiou</li>
-    <li class="supprimer">pioupioupiou</li>
-    <li class="supprimer">pioupioupiou</li>
-    <li class="supprimer">pioupioupiou</li>
-    <li class="supprimer">pioupioupiou</li>
+    <h2 class="supprimer">pioupioupiou</h2>
+    <h2 class="supprimer">pioupioupiou</h2>
+    <h2 class="supprimer">pioupioupiou</h2>
+    <h2 class="supprimer">pioupioupiou</h2>
+    <h2 class="supprimer">pioupioupiou</h2>
+    <h2 class="supprimer">pioupioupiou</h2>
 </ul>
     
 
     <script>
       $(document).ready(function () {
         $("#btn").click(function () {
-          $(".supprimer").remove();
+          $(".supprimer").after("<p>blablabla</p>");
         });
       });
     </script>
