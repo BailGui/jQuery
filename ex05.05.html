@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <button id="btn">click</button>
+<ul>
+    <div class="supprimer">pioupioupiou</div>
+    <div class="supprimer">pioupioupiou</div>
+    <div class="supprimer">pioupioupiou</div>
+    <div class="supprimer">pioupioupiou</div>
+    <div class="supprimer">pioupioupiou</div>
+    <div class="supprimer">pioupioupiou</div>
+</ul>
+    
+
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $(".supprimer").prepend("<span>Préfixe </span>");
+        });
+      });
+    </script>
+  </body>
+</html>
