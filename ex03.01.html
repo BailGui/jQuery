@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <p>
+      Question: Ajoutez une fonctionnalité qui affiche un message d'alerte
+      <br />
+      "Réponse visible" chaque fois qu'une réponse est affichée, et un message
+      <br />
+      "Réponse cachée" chaque fois qu'une réponse est cachée.
+    </p>
+
+    <div id="content" style="display: none">Réponse visible</div>
+    <button id="btn">Click</button>
+    <p id="valid">blablabla</p>
+
+    <div id="contentFalse" style="display: none">Réponse cachée</div>
+    <button id="btnFalse">Click</button>
+    <p id="false">pioupioupiou</p>
+
+    <script>
+      $(document).ready(function () {
+        $("#valid").hide();
+        $("#btn").click(function () {
+          alert($("#content").html());
+          $("#valid").show();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#false").show();
+        $("#btnFalse").click(function () {
+          alert($("#contentFalse").html());
+          $("#false").hide();
+        });
+      });
+    </script>
+  </body>
+</html>
