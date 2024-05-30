@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h1 style="background-color: red">Cours jQuery</h1>
+
+    <button id="btn1">blou</button>
+    <button id="btn2">blu</button>
+    <button id="btn3">bl</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("h1").animate({ width: "-=20%" }, 3000);
+        });
+      });
+    </script>
+  </body>
+</html>
