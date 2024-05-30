@@ -11,6 +11,7 @@
     <button id="btn1">blou</button>
     <button id="btn2">blu</button>
     <button id="btn3">bl</button>
+    <button id="btn">héhé</button>
 
     <script>
       $(document).ready(function () {
@@ -28,6 +29,15 @@
       $(document).ready(function () {
         $("#btn3").click(function () {
           $("h1").animate({ height: "toggle" }, 3000);
+        });
+      });
+
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("h1")
+            .animate({ width: "-=30%" })
+            .animate({ fontSize: "20px" })
+            .fadeTo(2000, 0.5);
         });
       });
     </script>
