@@ -12,6 +12,7 @@
     <button id="btn2">blu</button>
     <button id="btn3">bl</button>
     <button id="btn">héhé</button>
+    <button id="btn4">allin</button>
 
     <script>
       $(document).ready(function () {
@@ -38,6 +39,15 @@
             .animate({ width: "-=30%" })
             .animate({ fontSize: "20px" })
             .fadeTo(2000, 0.5);
+        });
+      });
+
+      $(document).ready(function () {
+        $("#btn4").click(function () {
+          $("h1").animate(
+            { width: "50%", padding: "50px 0 50px 25px", fontSize: "12px" },
+            2000
+          );
         });
       });
     </script>

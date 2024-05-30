@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h1 class="box" style="width: 100px; background-color: red">
+      Cours jQuery
+    </h1>
+
+    <button id="btn">héhé</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $(".box").animate({ width: "300px" }, 2000);
+        });
+      });
+    </script>
+  </body>
+</html>
