@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </head>
+
+  <style>
+    .bg-warning {
+      background-color: red;
+    }
+  </style>
+
+  <body>
+    <p>
+      Ajoutez un bouton "Ajouter Classe". Lorsqu'il est cliqué, ajoutez la
+      classe bg-warning au div avec l'ID myDiv.puis un bouton "Retirer Classe".
+      Lorsqu'il est cliqué, retire la classe bg-warning du div avec l'ID myDiv.
+    </p>
+
+    <div id="myDiv">div1</div>
+    <div id="myDiv">div2</div>
+    <div id="myDiv">div3</div>
+    <br />
+    <button id="btn">Ajouter classe</button>
+    <br />
+    <br />
+    <button id="btnRemove">Enlever classe</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("#myDiv").addClass("bg-warning");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#btnRemove").click(function () {
+          $("#myDiv").removeClass("bg-warning");
+        });
+      });
+    </script>
+  </body>
+</html>
