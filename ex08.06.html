@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <style>
+      .bg-info {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      Ajoutez un bouton "Action Multiple". Lorsqu'il est cliqué, ajoutez la
+      classe bg-info à un élément, change son texte, et désactivez le bouton
+      lui-même.
+    </p>
+
+    <div id="highlightThis">hello</div>
+    <div id="fgsdg">world</div>
+    <div id="gsfgs">!</div>
+
+    <button id="btn">Action Multiple</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("#highlightThis").siblings().addClass("bg-info");
+        });
+      });
+    </script>
+  </body>
+</html>

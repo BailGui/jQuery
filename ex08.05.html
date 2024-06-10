@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <style>
+      .bg-success {
+        background-color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      Ajoutez un bouton "Mettre en surbrillance". Lorsqu'il est cliqué, ajoutez
+      la classe bg-success à tous les éléments frères de la div avec l'ID
+      highlightThis.
+    </p>
+
+    <div id="highlightThis">hello</div>
+    <div id="fgsdg">world</div>
+    <div id="gsfgs">!</div>
+
+    <button id="btn">ici</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("#highlightThis").siblings().addClass("bg-success");
+        });
+      });
+    </script>
+  </body>
+</html>
