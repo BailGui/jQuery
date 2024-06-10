@@ -6,33 +6,21 @@
     <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
   </head>
 
-  <style>
-    .bg-warning {
-      background-color: red;
-    }
-  </style>
-
   <body>
-    <div id="myDiv">div1</div>
-    <div id="myDiv">div2</div>
-    <div id="myDiv">div3</div>
-    <br />
-    <button id="btn">Ajouter classe</button>
-    <br />
-    <br />
-    <button id="btnRemove">Enlever classe</button>
+    <p>
+      Ajoutez un bouton "Afficher Message". Lorsqu'il est cliqué, affichez une
+      alerte avec le message "Bouton cliqué", mais seulement une fois.
+    </p>
+
+    <button id="btn">Afficher Message</button>
 
     <script>
-      $(document).ready(function () {
-        $("#btn").click(function () {
-          $("#myDiv").addClass("bg-warning");
-        });
-      });
+      function eventAlert() {
+        alert("Hello World!");
+      }
 
       $(document).ready(function () {
-        $("#btnRemove").click(function () {
-          $("#myDiv").removeClass("bg-warning");
-        });
+        $("#btn").one("click", eventAlert);
       });
     </script>
   </body>

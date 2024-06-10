@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <p>
+      Ajoutez un bouton "Désactiver Clic". Lorsque ce bouton est cliqué,
+      désactivez l'événement clic sur le bouton "Afficher Message".
+    </p>
+
+    <button id="btn">Afficher Message</button>
+    <button id="og">Original Message</button>
+    <button id="btnDisable">Désactiver Clic</button>
+
+    <script>
+      function eventAlert() {
+        alert("Hello World!");
+      }
+
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("#og").on("click", eventAlert);
+        });
+      });
+
+      $(document).ready(function () {
+        $("#btnDisable").click(function () {
+          $("#og").off("click", eventAlert);
+        });
+      });
+    </script>
+  </body>
+</html>
