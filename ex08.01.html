@@ -6,11 +6,13 @@
     <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <a href="www.google.com" id="btn">google</a>
+    <img id="imgPlace" src="https://via.placeholder.com/300" alt="" />
+    <button id="btn">Changer l'image</button>
 
     <script>
       $(document).ready(function () {
-        $("#btn").attr(function ('href', 'https://www.uploadvr.com/') {
+        $("#btn").click(function () {
+          $("#imgPlace").attr("src", "https://via.placeholder.com/150");
         });
       });
     </script>
